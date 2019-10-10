@@ -4,6 +4,7 @@ Next you need to modify the fit call so that it includes the tensorboard callbac
 Ref:
 https://fizzylogic.nl/2017/05/08/monitor-progress-of-your-keras-based-neural-network-using-tensorboard/
 '''
+from time import time
 
 from keras.models import Sequential
 from keras.layers import Dense, Activation
