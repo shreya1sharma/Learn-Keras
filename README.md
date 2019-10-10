@@ -1,2 +1,2 @@
 # Learn-Keras
-This repository contains simple codes to make deep learning models on Keras
+This repository contains simple codes/tricks to make deep learning models in Keras
