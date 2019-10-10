@@ -1,6 +1,6 @@
 '''
 Create a new TensorBoard instance and point it to a log directory where data should be collected.
-Next you need to modify the fit call so that it includes the tensorboard callback.
+Next, modify the fit call so that it includes the tensorboard callback.
 Ref:
 https://fizzylogic.nl/2017/05/08/monitor-progress-of-your-keras-based-neural-network-using-tensorboard/
 '''
