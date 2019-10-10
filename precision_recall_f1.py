@@ -1,9 +1,12 @@
 '''
 Keras <2.3 do not provide precision, recall and f-measure metrics for training the model. 
-Keras used to implement the f1 score in its metrics; however, the developers decided to remove it in Keras 2.0, 
+Keras used to implement these scores in its metrics; however, the developers decided to remove it in Keras 2.0, 
 since this quantity is evaluated for each batch, which is more misleading than helpful, since this metric is only
 meaningful for the whole dataset. Fortunately, Keras allows us to access the validation data during training via 
 a Callback function, on which we can extend to compute the desired quantities.
+Ref:
+1. https://qiita.com/koshian2/items/81abfc0a75ea99f726b9
+2. https://medium.com/@thongonary/how-to-compute-f1-score-for-each-epoch-in-keras-a1acd17715a2
 Following code gives both the batch and the callback version for calculating these metrics
 '''
 
