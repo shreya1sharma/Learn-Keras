@@ -1,4 +1,9 @@
+# Code to plot confusion matrix using sklearn
+
 def plot_confusion_matrix(cm, classes, normalize = False, title = 'confusion matrix', cmap = plt.cm.Reds):
+'''
+this function inputs a confusion matrix and list of class names, and outputs a plot of confusion matrix
+'''
     if normalize:
         cm = cm.astype('float')/cm.sum(axis=1)[:, np.newaxis]
         print("Normalized confusion matrix")
