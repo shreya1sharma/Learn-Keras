@@ -35,8 +35,8 @@ this function inputs a confusion matrix and list of class names, and outputs a p
 
 # example usage
 class_names = ['class_1', 'class_2', 'class_3']
-cnf_matrix = confusion_matrix(test_labels, pred_labels)
-plot_confusion_matrix(master_conf_mat, 
+cm = confusion_matrix(test_labels, pred_labels)
+plot_confusion_matrix(cm, 
                       classes=class_names, 
                       normalize=False,
                       title='Normalized confusion matrix')
